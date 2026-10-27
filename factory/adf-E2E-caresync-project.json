@@ -1,0 +1,15 @@
+{
+	"name": "adf-E2E-caresync-project",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "acc16fe7-1746-4153-aee8-8bdfd095f82f",
+		"tenantId": "693ec59d-b649-4eeb-8543-6e3b8b20e905"
+	}
+}
