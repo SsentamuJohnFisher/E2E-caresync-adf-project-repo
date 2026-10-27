@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-E2E-caresync-project"
+		},
+		"LS_ADLS_containers_properties_typeProperties_url": {
+			"value": "https://e2ecaresyncproject.dfs.core.windows.net/"
+		},
+		"LS_AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://E2E-caresync-key-vault.vault.azure.net/"
+		},
+		"LS_postgresSQL_properties_typeProperties_server": {
+			"value": "ep-steep-hill-b8iy00lf-pooler.c-14.us-east-1.aws.neon.tech"
+		},
+		"LS_postgresSQL_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"LS_postgresSQL_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		}
+	}
+}
