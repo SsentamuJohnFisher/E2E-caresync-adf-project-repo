@@ -1,0 +1,10 @@
+{
+	"name": "LS_ADLS_containers",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://e2ecaresyncproject.dfs.core.windows.net/"
+		}
+	}
+}
