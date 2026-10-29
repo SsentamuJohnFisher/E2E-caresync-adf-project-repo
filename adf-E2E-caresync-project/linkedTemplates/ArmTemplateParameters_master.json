@@ -11,6 +11,15 @@
 		"LS_AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://E2E-caresync-key-vault.vault.azure.net/"
 		},
+		"LS_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "e2e-caresync-server.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "E2E-caresync-sql-database"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "Eng.John_Fisher"
+		},
 		"LS_postgresSQL_properties_typeProperties_server": {
 			"value": "ep-steep-hill-b8iy00lf-pooler.c-14.us-east-1.aws.neon.tech"
 		},

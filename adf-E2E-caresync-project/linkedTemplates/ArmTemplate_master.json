@@ -15,6 +15,18 @@
 			"type": "string",
 			"defaultValue": "https://E2E-caresync-key-vault.vault.azure.net/"
 		},
+		"LS_AzureSqlDatabase_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "e2e-caresync-server.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "E2E-caresync-sql-database"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Eng.John_Fisher"
+		},
 		"LS_postgresSQL_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "ep-steep-hill-b8iy00lf-pooler.c-14.us-east-1.aws.neon.tech"
@@ -59,6 +71,15 @@
 					},
 					"LS_AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"LS_AzureSqlDatabase_properties_typeProperties_server": {
+						"value": "[parameters('LS_AzureSqlDatabase_properties_typeProperties_server')]"
+					},
+					"LS_AzureSqlDatabase_properties_typeProperties_database": {
+						"value": "[parameters('LS_AzureSqlDatabase_properties_typeProperties_database')]"
+					},
+					"LS_AzureSqlDatabase_properties_typeProperties_userName": {
+						"value": "[parameters('LS_AzureSqlDatabase_properties_typeProperties_userName')]"
 					},
 					"LS_postgresSQL_properties_typeProperties_server": {
 						"value": "[parameters('LS_postgresSQL_properties_typeProperties_server')]"
