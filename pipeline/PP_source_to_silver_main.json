@@ -48,6 +48,7 @@
 						"value": "@activity('Read_source_table_list').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Read_source_table",
@@ -74,6 +75,35 @@
 								"dataset": {
 									"referenceName": "Data_set_AzureSqlTable",
 									"type": "DatasetReference"
+								}
+							}
+						},
+						{
+							"name": "Execute source_to_silver_inner",
+							"type": "ExecutePipeline",
+							"dependsOn": [
+								{
+									"activity": "Read_source_table",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "pp_source_to_silver_inner",
+									"type": "PipelineReference"
+								},
+								"waitOnCompletion": true,
+								"parameters": {
+									"table_id": {
+										"value": "@item()",
+										"type": "Expression"
+									}
 								}
 							}
 						}
