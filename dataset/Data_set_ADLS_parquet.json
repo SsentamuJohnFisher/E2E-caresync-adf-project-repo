@@ -18,7 +18,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "testing.csv",
 				"folderPath": {
 					"value": "@dataset().folder_name",
 					"type": "Expression"
